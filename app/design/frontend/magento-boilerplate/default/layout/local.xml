@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+
+<default>
+	<reference name="head">
+		<!--Removing items set in the page.xml we don't need since we're integrating the HTML 5 boilerplate-->
+		<action method="removeItem"><type>skin_js</type><name>js/ie6.js</name><if>lt IE 7</if></action>
+		<action method="removeItem"><type>js</type><name>lib/ds-sleight.js</name><params/><if>lt IE 7</if></action>
+		<action method="removeItem"><type>skin_css</type><name>css/styles-ie.css</name><params/><if>lt IE 8</if></action>
+        <action method="removeItem"><stylesheet>css/print.css</stylesheet><params>media="print"</params></action>
+        <!--End "Removing items"-->
+
+        <!--Adding items from boilerplate-->
+        <action method="addItem"><type>skin_js</type><name>js/modernizr-1.6.min.js</name><params/></action>
+        <action method="addItem"><type>skin_js</type><name>js/dd_belatedpng.js</name><params/></action>
+
+        <!--Enable jQuery only in no conflict mode-->
+        <!--<action method="addItem"><type>skin_js</type><name>js/jquery-1.4.2.js.js</name><params/></action>-->
+
+        <!--Profiling-->
+        <!--<action method="addItem"><type>skin_js</type><name>js/profiling/config.js</name><params/></action>-->
+        <!--<action method="addItem"><type>skin_js</type><name>js/profiling/yahoo-profiling.css</name><params/></action>-->
+        <!--<action method="addItem"><type>skin_js</type><name>js/profiling/yahoo-profiling.min.js</name><params/></action>-->
+
+        <!--End "Adding items" -->
+	</reference>
+</default>
+</layout>
