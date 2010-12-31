@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+
+<default>
+	<reference name="head">
+		<!--Removing items set in the page.xml we don't need since we're integrating the HTML 5 boilerplate-->
+		<action method="removeItem"><type>skin_js</type><name>js/ie6.js</name><if>lt IE 7</if></action>
+		<action method="removeItem"><type>js</type><name>lib/ds-sleight.js</name><params/><if>lt IE 7</if></action>
+		<action method="removeItem"><type>skin_css</type><name>css/styles-ie.css</name><params/><if>lt IE 8</if></action>
+        <action method="removeItem"><stylesheet>css/print.css</stylesheet><params>media="print"</params></action>
+        <!--Adding items from boilerplate-->
+        <action method="addItem"><type>skin_js</type><name>js/modernizr-1.5.min.js</name><params/></action>
+        <action method="addItem"><type>skin_js</type><name>js/dd_belatedpng.js</name><params/></action>
+	</reference>
+</default>
+</layout>
