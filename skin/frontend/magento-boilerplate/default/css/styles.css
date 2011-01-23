@@ -115,8 +115,6 @@ a:hover, a:active { outline: none; }
 a, a:active, a:visited { color: #607890; }
 a:hover { color: #036; }
 
-
-ul, ol { margin-left: 1.8em; }
 ol { list-style-type: decimal; }
 
 /* Remove margins for navigation lists */
@@ -629,7 +627,8 @@ tr.summary-details-excluded { font-style:italic; }
 .std ul.disc { list-style:disc outside; padding-left:18px; margin:0 0 10px; }
 .std dl dt { font-weight:bold; }
 .std dl dd { margin:0 0 10px; }
-/*.std ul,
+/*
+.std ul,
 .std ol,
 .std dl,
 .std p,
