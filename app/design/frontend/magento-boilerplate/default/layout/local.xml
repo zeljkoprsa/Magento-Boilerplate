@@ -8,11 +8,19 @@
 		<action method="removeItem"><type>js</type><name>lib/ds-sleight.js</name><params/><if>lt IE 7</if></action>
 		<action method="removeItem"><type>skin_css</type><name>css/styles-ie.css</name><params/><if>lt IE 8</if></action>
         <action method="removeItem"><stylesheet>css/print.css</stylesheet><params>media="print"</params></action>
+
+
         <!--End "Removing items"-->
 
         <!--Adding items from boilerplate-->
         <action method="addItem"><type>skin_js</type><name>js/modernizr-1.6.min.js</name><params/></action>
         <action method="addItem"><type>skin_js</type><name>js/dd_belatedpng.js</name><params/></action>
+
+        <!--Fromalize Js-->
+        <action method="addItem"><type>skin_js</type><name>formalize/javascripts/prototype.formalize.js</name><params/></action>
+
+        <!--Formalize CSS-->
+        <action method="addCss"><stylesheet>formalize/stylesheets/formalize.css</stylesheet></action>
 
         <!--Enable jQuery only in no conflict mode-->
         <!--<action method="addItem"><type>skin_js</type><name>js/jquery-1.4.2.js.js</name><params/></action>-->

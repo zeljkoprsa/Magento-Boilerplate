@@ -293,7 +293,7 @@ ul,ol         { list-style:none; }
 /* Layout ================================================================================ */
 
 .wrapper { min-width:954px; }
-.page {}
+.page    { background: #fff;border-left: 1px solid #EFEFEF;border-right: 1px solid #EFEFEF;margin: 0px auto;width: 958px; }
 .page-print { background:#fff; padding:25px 30px; text-align:left; }
 .page-empty { background:#fff; padding:20px; text-align:left; }
 .page-popup { background:#fff; padding:25px 30px; text-align:left; }
@@ -347,8 +347,8 @@ textarea { overflow:auto; }
 input.radio { margin-right:3px; }
 input.checkbox { margin-right:3px; }
 input.qty { width:2.5em !important; }
-button.button::-moz-focus-inner { padding:0; border:0; } /* FF Fix */
-button.button { -webkit-border-fit:lines; } /* <- Safari & Google Chrome Fix */
+/*button.button::-moz-focus-inner { padding:0; border:0; } *//* FF Fix */
+/*button.button { -webkit-border-fit:lines; } *//* <- Safari & Google Chrome Fix */
 button.button { overflow:visible; width:auto; border:0; padding:0; margin:0; background:transparent; cursor:pointer; }
 button.button span { display:block; height:19px;line-height:23px; border:1px solid #de5400; background:#f18200; padding:0 8px; font:bold 12px/19px Arial, Helvetica, sans-serif; text-align:center; white-space:nowrap;color:#fff; }
 button.button span span { border:0; padding:0; }
@@ -544,7 +544,7 @@ p.required { font-size:11px; text-align:right;  }
 .pager .amount { float:left; margin:0; }
 .pager .limiter { float:right; }
 .pager .limiter label { vertical-align:middle; }
-.pager .limiter select { padding:0; margin:0 0 1px; vertical-align:middle; }
+.pager .limiter select { }
 .pager .pages { margin:0 140px; }
 .pager .pages ol { display:inline; }
 .pager .pages li { display:inline; margin:0 2px; }
@@ -555,7 +555,7 @@ p.required { font-size:11px; text-align:right;  }
 .sorter .view-mode { float:left; margin:0; }
 .sorter .sort-by { float:right; padding-right:36px; }
 .sorter .sort-by label { vertical-align:middle; }
-.sorter .sort-by select { padding:0; margin:0 0 1px; vertical-align:middle; }
+.sorter .sort-by select {  }
 .sorter .link-feed {}
 
 /* Toolbar */
@@ -709,7 +709,7 @@ header .form-search .search-autocomplete li.odd { background-color:#fffefb; }
 header .form-search .search-autocomplete li.selected { background-color:#f7e8dd; }
 header .form-language { clear:both; padding:5px 0 0; text-align:right; }
 header .form-language label { font-weight:bold; padding-right:5px; vertical-align:middle; }
-header .form-language select { padding:0; }
+header .form-language select {  }
 header .form-language select.flags option { background-position:4px 50%; background-repeat:no-repeat; padding-left:25px; }
 header .links { float:right; margin:0 0 6px; }
 header .links li { float:left; font-size:11px; background:url(../images/bkg_pipe1.gif) 100% 60% no-repeat; padding:0 8px 0 7px; }
