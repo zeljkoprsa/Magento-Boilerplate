@@ -220,7 +220,7 @@ button {  width: auto; overflow: visible; }
 /* Magento Boilerplate styling - - PLEASE REMOVE - - It's here just too look less plane on http://zeljkoprsa.com/magento-bolierplate Thanks! */
 
 
-body          { background:url("../images/body-bg.png") repeat scroll 0 0; }
+body          { background:url("../images/body-bg.png") repeat scroll center 0; }
 
 /* Magento Boilerplate styling  - END */
 
@@ -718,7 +718,7 @@ header .links a {  }
 .header-container .top-container a { font-size:11px;  }
 
 /********** < Navigation */
-.nav-container { }
+.nav-container { background: #F9F9F9;border-bottom: 1px solid #F1F2F3;border-top: 1px solid #F1F2F3;margin-top: 10px; }
 #nav { width:918px; margin:0 auto; padding:0 16px; font-size:13px; }
 
 /* All Levels */ /* Style consistent throughout all nav levels */
@@ -740,7 +740,7 @@ header .links a {  }
 
 /* 1st Level */
 #nav ul li,
-#nav ul li.active { float:none; margin:0; padding-bottom:1px; background:#ecf3f6; }
+#nav ul li.active { float:none; margin:0; padding-bottom:1px; background:#F9F9F9; }
 #nav ul li.last { background:#ecf3f6; padding-bottom:0; }
 
 #nav ul a,
@@ -749,7 +749,7 @@ header .links a {  }
 
 /* 2nd Level */
 #nav ul,
-#nav div { position:absolute; width:15em; top:27px; left:-10000px; border:1px solid #899ba5; }
+#nav div { position:absolute; width:15em; top:28px; left:-10000px; border:1px solid #F1F2F3; }
 #nav div ul { position:static; width:auto; border:none; }
 
 /* 3rd+ Level */
@@ -757,7 +757,7 @@ header .links a {  }
 #nav ul div { top:5px; }
 
 #nav ul li a { background:#ecf3f6; }
-#nav ul li a:hover { background:#d5e4eb; }
+#nav ul li a:hover { background:#f1f2f3; }
 #nav ul li a,
 #nav ul li a:hover {  }
 #nav ul span,
