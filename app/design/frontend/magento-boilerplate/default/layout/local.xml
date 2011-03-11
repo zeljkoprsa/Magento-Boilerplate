@@ -15,7 +15,7 @@
         <!--Adding items from boilerplate-->
 
         <action method="addItem"><type>skin_js</type><name>js/selectivizr.js</name><params/> <if>lt IE 9</if></action>
-        <action method="addItem"><type>skin_js</type><name>js/modernizr-1.6.min.js</name><params/><if>lt IE 9</if></action>
+        <action method="addItem"><type>skin_js</type><name>js/modernizr-1.7.min.js</name><params/><if>lt IE 9</if></action>
         <action method="addItem"><type>skin_js</type><name>js/dd_belatedpng.js</name><params/><if>lt IE 7</if></action>
 
         <!--Fromalize Js-->
@@ -25,7 +25,7 @@
         <action method="addCss"><stylesheet>formalize/stylesheets/formalize.css</stylesheet></action>
 
         <!--Enable jQuery only in no conflict mode-->
-        <!--<action method="addItem"><type>skin_js</type><name>js/jquery-1.4.2.js.js</name><params/></action>-->
+        <!--<action method="addItem"><type>skin_js</type><name>js/jquery-1.5.1.js</name><params/></action>-->
 
         <!--Profiling-->
         <!--<action method="addItem"><type>skin_js</type><name>js/profiling/config.js</name><params/></action>-->
