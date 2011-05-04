@@ -25,7 +25,7 @@
         <action method="addCss"><stylesheet>formalize/stylesheets/formalize.css</stylesheet></action>
 
         <!--Enable jQuery only in no conflict mode-->
-        <!--<action method="addItem"><type>skin_js</type><name>js/jquery-1.5.1.js</name><params/></action>-->
+        <action method="addItem"><type>skin_js</type><name>js/jquery-1.6-no-conflict.js</name><params/></action>
 
         <!--Profiling-->
         <!--<action method="addItem"><type>skin_js</type><name>js/profiling/config.js</name><params/></action>-->
