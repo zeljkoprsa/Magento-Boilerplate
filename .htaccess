@@ -316,3 +316,7 @@ AddType application/octet-stream       safariextz
 ## http://developer.yahoo.com/performance/rules.html#etags
 
     #FileETag none
+
+
+BrowserMatch MSIE best-standards-support
+Header set X-UA-Compatible IE=8 env=best-standards-support
