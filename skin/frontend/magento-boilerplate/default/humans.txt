@@ -3,17 +3,20 @@
 
 
 /* TEAM */
-  <your title>: <your name>
-  Site: 
-  Twitter: 
-  Location: 
+  BoilerPlatr: Željko Prša
+  Site: http://zeljkoprsa.com
+  Twitter: zeljkoprsa
+  Location: Osijek, Croatia
 
 /* THANKS */
-  Names (& URL):
-
+  This Magento theme package shamelessly uses HTML5 boilerplate by Paul Irish and CSS3PIE by the guys from 327 Creative LLC:
+  http://html5boilerplate.com/
+  http://paulirish.com/
+  http://327creative.com/
+  
 /* SITE */
   Standards: HTML5, CSS3
-  Components: Modernizr, Prototype, Selectivizr
+  Components: Modernizr, Prototype, Selectivizr, Formalize
   Software: Magento
   
 
