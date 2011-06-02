@@ -8,24 +8,21 @@
 		<action method="removeItem"><type>js</type><name>lib/ds-sleight.js</name><params/><if>lt IE 7</if></action>
 		<action method="removeItem"><type>skin_css</type><name>css/styles-ie.css</name><params/><if>lt IE 8</if></action>
         <action method="removeItem"><stylesheet>css/print.css</stylesheet><params>media="print"</params></action>
-
-
         <!--End "Removing items"-->
 
         <!--Adding items from boilerplate-->
 
         <action method="addItem"><type>skin_js</type><name>js/selectivizr.js</name><params/> <if>lt IE 9</if></action>
-        <action method="addItem"><type>skin_js</type><name>js/modernizr-1.7.min.js</name><params/><if>lt IE 9</if></action>
+        <action method="addItem"><type>skin_js</type><name>js/modernizr-2.0.js</name><params/><if>lt IE 9</if></action>
         <action method="addItem"><type>skin_js</type><name>js/dd_belatedpng.js</name><params/><if>lt IE 7</if></action>
 
-        <!--Fromalize Js-->
-        <action method="addItem"><type>skin_js</type><name>formalize/javascripts/prototype.formalize.js</name><params/></action>
-
+        <!--Formalize Js-->
+        <action method="addItem"><type>skin_js</type><name>formalize/javascripts/prototype.formalize.js</name><params/><if>lt IE 9</if></action>
         <!--Formalize CSS-->
-        <action method="addCss"><stylesheet>formalize/stylesheets/formalize.css</stylesheet></action>
+        <action method="addCss"><stylesheet>formalize/stylesheets/formalize.css</stylesheet><if>lt IE 9</if></action>
 
         <!--Enable jQuery only in no conflict mode-->
-        <action method="addItem"><type>skin_js</type><name>js/jquery-1.6-no-conflict.js</name><params/></action>
+        <action method="addItem"><type>skin_js</type><name>js/jquery-1.6.1-no-conflict.js</name><params/></action>
 
         <!--Profiling-->
         <!--<action method="addItem"><type>skin_js</type><name>js/profiling/config.js</name><params/></action>-->
