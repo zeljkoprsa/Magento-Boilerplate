@@ -1,5 +1,5 @@
 /*!
- * Modernizr v2.0
+ * Modernizr v2.0.6
  * http://www.modernizr.com
  *
  * Copyright (c) 2009-2011 Faruk Ates, Paul Irish, Alex Sexton
@@ -18,11 +18,8 @@
  * To get a build that includes Modernizr.load(), as well as choosing
  * which tests to include, go to www.modernizr.com/download/
  *
- * @author        Faruk Ates
- * @author        Paul Irish
- * @author        Alex Sexton
- * @copyright     (c) 2009-2011
- * @contributor   Ben Alman
+ * Authors        Faruk Ates, Paul Irish, Alex Sexton,
+ * Contributors   Ryan Seddon, Ben Alman
  */
 /*
 * Use the Development version to develop with and learn from. Then, when you’re ready for production,
@@ -31,7 +28,7 @@
 
  window.Modernizr = (function( window, document, undefined ) {
 
-    var version = '2.0',
+    var version = '2.0.6',
 
     Modernizr = {},
     
@@ -261,7 +258,10 @@
 
         injectElementWithStyles(style, function( node, rule ) {
             var style = document.styleSheets[document.styleSheets.length - 1],
-                cssText = style.cssText || style.cssRules[0].cssText,
+                // IE8 will bork if you create a custom build that excludes both fontface and generatedcontent tests.
+                // So we check for cssRules and that there is a rule available
+                // More here: https://github.com/Modernizr/Modernizr/issues/288 & https://github.com/Modernizr/Modernizr/issues/293
+                cssText = style.cssRules && style.cssRules[0] ? style.cssRules[0].cssText : style.cssText || "",
                 children = node.childNodes, hash = {};
 
             while ( len-- ) {
@@ -285,7 +285,7 @@
         /*>>csstransforms3d*/ ,['@media (',prefixes.join('transform-3d),('),mod,')',
                                 '{#csstransforms3d{left:9px;position:absolute}}'].join('')/*>>csstransforms3d*/
                                 
-        /*>>generatedcontent*/,['#generatedcontent:after{content:"',smile,'"}'].join('')  /*>>generatedcontent*/
+        /*>>generatedcontent*/,['#generatedcontent:after{content:"',smile,'";visibility:hidden}'].join('')  /*>>generatedcontent*/
     ],
       [
         /*>>fontface*/        'fontface'          /*>>fontface*/
@@ -386,7 +386,6 @@
     tests['touch'] = function() {
         return Modernizr['touch'];
     };
-
 
     /**
      * geolocation tests for the new Geolocation API specification.

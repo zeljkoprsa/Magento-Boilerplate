@@ -25,8 +25,8 @@
  */
 ?>
 
-<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
-     Remove this if you use the .htaccess -->
+<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/b/378 -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
 <title><?php echo $this->getTitle() ?></title>
@@ -35,8 +35,8 @@
 <meta name="keywords" content="<?php echo htmlspecialchars($this->getKeywords()) ?>" />
 <meta name="robots" content="<?php echo htmlspecialchars($this->getRobots()) ?>" />
 
-<!--  Mobile viewport optimized: j.mp/bplateviewport -->
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Mobile viewport optimized: j.mp/bplateviewport -->
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
 <!-- Place favicon.ico & apple-touch-icon.png in the root of your theme's skin folder-->
 
