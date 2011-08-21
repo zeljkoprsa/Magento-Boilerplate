@@ -11,19 +11,15 @@
         <!--End "Removing items"-->
 
         <!--Adding items from boilerplate-->
+        <action method="addItem"><type>skin_js</type><name>js/modernizr-2.0.6.js</name><params/></action>
 
         <action method="addItem"><type>skin_js</type><name>js/selectivizr.js</name><params/><if>lt IE 9</if></action>
-        <action method="addItem"><type>skin_js</type><name>js/modernizr-2.0.6.js</name><params/><if>lt IE 9</if></action>
-        <action method="addItem"><type>skin_js</type><name>js/dd_belatedpng.js</name><params/><if>lt IE 7</if></action>
+        <!--<action method="addItem"><type>skin_js</type><name>js/dd_belatedpng.js</name><params/><if>lt IE 7</if></action>-->
 
         <!--Formalize Js-->
         <action method="addItem"><type>skin_js</type><name>formalize/js/prototype.formalize.js</name><params/></action>
         <!--Formalize CSS-->
         <action method="addCss"><stylesheet>formalize/css/formalize.css</stylesheet></action>
-
-        <!--Enable jQuery only in no conflict mode-->
-        <action method="addItem"><type>skin_js</type><name>js/jquery-1.6.2-no-conflict.js</name><params/></action>
-
         <!--Profiling-->
         <!--<action method="addItem"><type>skin_js</type><name>js/profiling/config.js</name><params/></action>-->
         <!--<action method="addItem"><type>skin_js</type><name>js/profiling/yahoo-profiling.css</name><params/></action>-->
